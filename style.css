@@ -1,5 +1,6 @@
 * {
 	padding: 0;
+	cursor: none;
 	margin: 0;
 	box-sizing: border-box;
 }
@@ -57,7 +58,7 @@
 	position: absolute;
 	right: -7px;
 	top: 122px;
-	cursor: pointer;
+	z-index: 1;
 }
 .line {
 	background-color: black;
@@ -68,6 +69,25 @@
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+}
+.baff {
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	width: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	top: 2px;
+	border-radius: 10px;
+}
+.circle {
+	background: radial-gradient(50% 50% at 55% 40%, #181818, #4d4c4c 75%, transparent) center;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	position: relative;
+	left: 13px;
+	top: -2px;
 }
 .under-line {
 	background-color: white;
@@ -101,4 +121,13 @@ img {
 	100% {
 		bottom: 5px;
 	}
+}
+.cursor {
+	background-color: rgba(73, 73, 233, 0.596);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	border: 1px solid rgba(0, 0, 0, 0.596);
+	z-index: 1;
 }

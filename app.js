@@ -2,6 +2,7 @@ var iphone_background = document.getElementById('iphone');
 var btn = document.getElementById('button-4');
 var line = document.getElementById('line');
 var time = document.getElementById('time');
+var cursor = document.getElementById('cursor');
 let index = 0;
 
 btn.addEventListener("click", function() {
@@ -20,4 +21,10 @@ btn.addEventListener("click", function() {
 		iphone_background.style.background = "url('iphone.jpeg') center";
 		iphone_background.style.backgroundSize = "cover"
 	}
+});
+document.addEventListener("mousemove", function(e) {
+	var x = e.clientX - 10;
+	var y = e.clientY - 10;
+	cursor.style.left = x + "px";
+	cursor.style.top = y + "px";
 });
