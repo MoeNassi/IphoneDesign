@@ -4,6 +4,10 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body  {
+	background-color: gray;
+	overflow: hidden;
+}
 .container {
 	display: flex;
 	justify-content: center;
@@ -100,6 +104,7 @@
 	transform: translateX(-50%);
 	animation: move-up 1s linear;
 	display: none;
+	z-index: 3;
 }
 
 img {

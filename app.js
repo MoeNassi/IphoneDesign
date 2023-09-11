@@ -28,3 +28,9 @@ document.addEventListener("mousemove", function(e) {
 	cursor.style.left = x + "px";
 	cursor.style.top = y + "px";
 });
+line.addEventListener("mouseenter", function() {
+	iphone_background.style.background = "url('n.jpg') center";
+	iphone_background.style.backgroundSize = "cover";
+	time.style.display = "none";
+	line.style.display = "none";
+})
