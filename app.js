@@ -99,4 +99,5 @@ line.addEventListener("mouseenter", function() {
 	iphone_background.style.backgroundSize = "cover";
 	time.style.display = "none";
 	line.style.display = "none";
+	date.style.display = "none";
 });
